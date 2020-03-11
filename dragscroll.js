@@ -92,10 +92,10 @@
                             (scroller = el.scroller||el).scrollLeft -=
                                 newScrollX = (- lastClientX + (lastClientX=e.clientX));
                             scroller.scrollTop -=
-                                newScrollY = (- lastClientY + (lastClientY=e.clientY));
+                                newScrollY = 0;
                             if (el == _document.body) {
                                 (scroller = _document.documentElement).scrollLeft -= newScrollX;
-                                scroller.scrollTop -= newScrollY;
+                                scroller.scrollTop -= 0;
                             }
                           }
                         }
